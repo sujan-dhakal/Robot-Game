@@ -1,7 +1,7 @@
 # Robot Game
   Developed in C++ using Qt. (https://www.qt.io/)
 
-Sujan Dhakal (dhakals@lafayette.edu)
+Sujan Dhakal
 
 System Requirement: Qt version 5.11.1 (macOS). NOT TESTED on other platforms. 
 
