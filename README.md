@@ -1,5 +1,4 @@
 # Robot Game
-  Sujan Dhakal
   
   Developed in C++ using Qt. (https://www.qt.io/)
 
