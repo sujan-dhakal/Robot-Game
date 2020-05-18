@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainMenuGUI</class>
+ <widget class="QMainWindow" name="MainMenuGUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>475</width>
+    <height>337</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainMenuGUI</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="playWorm">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>160</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Play Worm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="playRobot">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>110</y>
+      <width>101</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Play Robots</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>230</y>
+      <width>391</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Please select a current player or create a new player before playing.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="curr_player">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>35</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>475</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuStatistics">
+    <property name="title">
+     <string>Statistics</string>
+    </property>
+    <addaction name="actionTop_3_Players"/>
+    <addaction name="separator"/>
+    <addaction name="actionTop_3_Games"/>
+    <addaction name="separator"/>
+    <addaction name="actionGame_Statistics"/>
+   </widget>
+   <widget class="QMenu" name="menuPlayer">
+    <property name="title">
+     <string>Player</string>
+    </property>
+    <addaction name="actionCreate_New_Player"/>
+    <addaction name="separator"/>
+    <addaction name="actionSelect_Existing_Player"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuStatistics"/>
+   <addaction name="menuPlayer"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionTop_3_Players">
+   <property name="text">
+    <string>Top 3 Players</string>
+   </property>
+  </action>
+  <action name="actionTop_3_Games">
+   <property name="text">
+    <string>Top 3 Games</string>
+   </property>
+  </action>
+  <action name="actionGame_Statistics">
+   <property name="text">
+    <string>Game Statistics</string>
+   </property>
+  </action>
+  <action name="actionCreate_New_Player">
+   <property name="text">
+    <string>Create New Player</string>
+   </property>
+  </action>
+  <action name="actionSelect_Existing_Player">
+   <property name="text">
+    <string>Select Existing Player</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
